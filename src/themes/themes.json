@@ -1,0 +1,45 @@
+{
+  "name": "themes",
+  "themes": [
+    {
+      "key": "Dark purple",
+      "colorText": "rgb(240, 217, 253)",
+      "colorBgBase": "rgb(35, 25, 39)",
+      "colorPrimaryBg": "rgb(8, 0, 15)",
+      "colorPrimaryText": "rgb(238, 130, 238)",
+      "colorFillSecondary": "rgb(8, 0, 11)",
+      "colorTextHeading": "rgb(238, 130, 238)",
+      "colorBgLayout": "rgb(8, 0, 15)"
+    },
+    {
+      "key": "Dark grey",
+      "colorText": "rgb(155, 255, 255)",
+      "colorBgBase": "rgb(5, 5, 8)",
+      "colorPrimaryBg": "rgb(225, 177, 255)",
+      "colorPrimaryText": "rgb(225, 177, 255)",
+      "colorFillSecondary": "rgb(10, 10, 15)",
+      "colorTextHeading": "rgb(225, 177, 255)",
+      "colorBgLayout": "rgb(10, 10, 15)"
+    },
+    {
+      "key": "Light",
+      "colorText": "rgb(6, 8, 38)",
+      "colorBgBase": "grey",
+      "colorPrimaryBg": "white",
+      "colorPrimaryText": "rgb(6, 8, 38)",
+      "colorFillSecondary": "rgb(6, 8, 38)",
+      "colorTextHeading": "rgb(6, 8, 38)",
+      "colorBgLayout": "rgb(230, 230, 230)"
+    },
+    {
+      "key": "Blue",
+      "colorText": "peachpuff",
+      "colorBgBase": "midnightblue",
+      "colorPrimaryBg": "white",
+      "colorPrimaryText": "rgb(6, 8, 38)",
+      "colorFillSecondary": "rgb(6, 8, 38)",
+      "colorTextHeading": "rgb(6, 8, 38)",
+      "colorBgLayout": "linear-gradient(midnightblue, peachpuff)"
+    }
+  ]
+}
