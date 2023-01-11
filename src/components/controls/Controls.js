@@ -1,4 +1,3 @@
-import styles from "./Controls.module.scss";
 import {Button, Space} from "antd";
 import {useSelector} from "react-redux";
 

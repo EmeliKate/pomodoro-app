@@ -16,14 +16,12 @@ const Clock = ({time}) => {
     const {soundOn} = useSelector( (store) => store.settings)
     const dispatch = useDispatch()
 
-    //const currentTime = new Date().getTime();
-
     useEffect( () => {
         const secondsLeftToBeSet = localStorage.getItem("secondsLeft") ? parseInt(localStorage.getItem("secondsLeft")) : secondsLeft
         dispatch(set(secondsLeftToBeSet))
         const defaultTimeToBeSet = localStorage.getItem("defaultTime") ? parseInt(localStorage.getItem("defaultTime")) : defaultTime
         dispatch(setDefaultTime(defaultTimeToBeSet))
-    }, [])
+    }, [secondsLeft, dispatch, defaultTime])
 
     useEffect( () => {
         const interval = setInterval(() => {
@@ -51,7 +49,7 @@ const Clock = ({time}) => {
         return () => {
             clearInterval(interval)
         }
-    }, [isOn, secondsLeft])
+    }, [isOn, secondsLeft, dispatch, defaultTime, onBreak, soundOn])
 
     return <div
         className={styles.clock}

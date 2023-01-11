@@ -1,6 +1,5 @@
-import styles from "./Settings.module.scss";
 import {useDispatch, useSelector} from "react-redux";
-import {Space, Dropdown, Button, Drawer, Switch} from "antd";
+import {Space, Dropdown, Button, Drawer} from "antd";
 import themesData from "../../themes/themes.json"
 import {toggleSettings, changeTheme, setDefaultTime, toggleSound, toggleMusic} from "../../features/settings/settingsSlice";
 import music from "../../assets/sounds/lofi0.mp3"
@@ -92,7 +91,7 @@ const Settings = () => {
             <Dropdown
                 menu={{items: themeItems}}
             >
-                <a onClick={(e) => e.preventDefault()}>
+                <a onClick={(e) => e.preventDefault()} href="#">
                     <Space>
                         <Button className="dropdown-btn">
                             Themes
@@ -105,7 +104,7 @@ const Settings = () => {
             <Dropdown
                 menu={{items: intervalItems}}
             >
-                <a onClick={(e) => e.preventDefault()}>
+                <a onClick={(e) => e.preventDefault()} href="#">
                     <Space>
                         <Button className="dropdown-btn">
                             Interval
