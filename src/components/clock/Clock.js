@@ -21,7 +21,7 @@ const Clock = ({time}) => {
         dispatch(set(secondsLeftToBeSet))
         const defaultTimeToBeSet = localStorage.getItem("defaultTime") ? parseInt(localStorage.getItem("defaultTime")) : defaultTime
         dispatch(setDefaultTime(defaultTimeToBeSet))
-    }, [defaultTime])
+    }, [defaultTime, dispatch])
 
     useEffect( () => {
         const interval = setInterval(() => {
@@ -49,7 +49,7 @@ const Clock = ({time}) => {
         return () => {
             clearInterval(interval)
         }
-    }, [isOn, secondsLeft, onBreak, soundOn, defaultTime])
+    }, [isOn, secondsLeft, onBreak, soundOn, defaultTime, dispatch])
 
     return <div
         className={styles.clock}
