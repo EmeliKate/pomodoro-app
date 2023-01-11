@@ -17,11 +17,11 @@ const Clock = ({time}) => {
     const dispatch = useDispatch()
 
     useEffect( () => {
-        const secondsLeftToBeSet = localStorage.getItem("secondsLeft") ? parseInt(localStorage.getItem("secondsLeft")) : secondsLeft
+        const secondsLeftToBeSet = localStorage.getItem("secondsLeft") ? parseInt(localStorage.getItem("secondsLeft")) : defaultTime
         dispatch(set(secondsLeftToBeSet))
         const defaultTimeToBeSet = localStorage.getItem("defaultTime") ? parseInt(localStorage.getItem("defaultTime")) : defaultTime
         dispatch(setDefaultTime(defaultTimeToBeSet))
-    }, [])
+    }, [ defaultTime])
 
     useEffect( () => {
         const interval = setInterval(() => {
