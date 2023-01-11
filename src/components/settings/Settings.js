@@ -91,26 +91,26 @@ const Settings = () => {
             <Dropdown
                 menu={{items: themeItems}}
             >
-                <a onClick={(e) => e.preventDefault()} href="#">
+                {/*<a onClick={(e) => e.preventDefault()} href="#">*/}
                     <Space>
                         <Button className="dropdown-btn">
                             Themes
                         </Button>
                     </Space>
-                </a>
+                {/*</a>*/}
             </Dropdown>
         </p>
         <p>
             <Dropdown
                 menu={{items: intervalItems}}
             >
-                <a onClick={(e) => e.preventDefault()} href="#">
+                {/*<a onClick={(e) => e.preventDefault()} href="#">*/}
                     <Space>
                         <Button className="dropdown-btn">
                             Interval
                         </Button>
                     </Space>
-                </a>
+                {/*</a>*/}
             </Dropdown>
         </p>
         <p>
