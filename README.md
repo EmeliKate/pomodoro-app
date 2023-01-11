@@ -70,4 +70,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### Status badge
-![CI/CD](https://github.com/EmeliKate/Pomodoro/workflows/CI/CD/badge.svg)
+![CI/CD](https://github.com/EmeliKate/Pomodoro/workflows/CI/CD/main.yml)
