@@ -67,7 +67,7 @@ const Settings = () => {
                      50/10
                  </div>
             ),
-            workTime: 1
+            workTime: 50
         },
         {
             key: "25/5",
@@ -76,7 +76,7 @@ const Settings = () => {
                     25/5
                 </div>
             ),
-            workTime: 0.1
+            workTime: 25
         }
     ]
 

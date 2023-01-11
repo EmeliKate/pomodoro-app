@@ -4,7 +4,7 @@ import themesData from "../../themes/themes.json"
 const themes = themesData.themes
 
 const initialState = {
-    defaultTime: 0.1 * 60,
+    defaultTime: 50 * 60,
     isOpen: true,
     appTheme: {
         colorText: localStorage.getItem("appTheme_colorText") ? localStorage.getItem("appTheme_colorText") : themes[0].colorText,
