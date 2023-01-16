@@ -16,6 +16,7 @@ const Clock = ({time}) => {
     const {soundOn} = useSelector( (store) => store.settings)
     const dispatch = useDispatch()
 
+
     useEffect( () => {
         const secondsLeftToBeSet = localStorage.getItem("secondsLeft") ? parseInt(localStorage.getItem("secondsLeft")) : defaultTime
         dispatch(set(secondsLeftToBeSet))
